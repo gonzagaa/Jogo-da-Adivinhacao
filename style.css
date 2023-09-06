@@ -9,12 +9,15 @@
 }
 
 body {
-    background: linear-gradient(315deg, #C2E9FB 0%, #A1C4FD 100%);
+    background: linear-gradient(45deg, #580078 0%, #000 100%);
     font-size: 1.6rem;
 
     display: grid;
     place-items: center;
     height: 100vh;
+
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
 }
 
 body, button, input {
@@ -22,7 +25,7 @@ body, button, input {
 }
 
 button {
-    background-color: #7879F1;
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
     font-weight: bold;
     border-radius: 0 .4rem .4rem 0;
@@ -32,7 +35,11 @@ button {
 }
 
 button:hover {
-    background-color: #6c6cd9;
+    color: #000;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.724);
 }
 
 .hide {
@@ -40,9 +47,17 @@ button:hover {
 }
 
 main {
-    border-radius: 6px;
+    /*border-radius: 6px;
     background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);*/
+    
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: .8rem;
+
+    backdrop-filter: blur(.4rem);
+    -webkit-backdrop-filter: blur(.4rem);
 
     padding: 4.8rem 6.4rem 6.4rem;
 
@@ -57,11 +72,11 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
-    color: #34355B;
+    color: #fff;
 }
 
 p {
-    color: #34355B;
+    color: #fff;
     opacity: .8;
 }
 
@@ -90,8 +105,22 @@ h2 {
     font-weight: normal;
 
     margin-bottom: 3.3rem;
+
+    color: #fff;
 }
 
 .screen2 button {
     border-radius: .4rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

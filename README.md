@@ -12,7 +12,7 @@ Esse é um jogo da adivinhação, onde você digita um número de 1 a 10 e conta
 <br>
 
 <p align="center">
-  <img alt="projeto jogo da adivinhação" src="./assets/Captura de tela 2023-09-05 141621.png" width="100%">
+  <img alt="projeto jogo da adivinhação" src="./assets/Captura de tela 2023-09-05 234017.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
